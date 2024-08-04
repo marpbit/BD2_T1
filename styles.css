@@ -110,6 +110,7 @@ aside h2{
     height: auto;
     display: block;
     margin-top: 20px;
+    border-radius: 25px;
 }
 
 @media (max-width: 799px) {
