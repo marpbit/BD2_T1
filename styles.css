@@ -1,8 +1,8 @@
-:root{    
+:root{
     --primary-color:#1b263b;
     --primary-color-variant:#e0e1dd;
-    --secondary-color:#778da9;
-    --secondary-color-variant:#118ab2;
+    --secondary-color: #457b9d;
+    --secondary-color-variant:#62b6cb;
     --link-color:#073b4c;
     scroll-behavior: smooth;
 }
@@ -30,7 +30,7 @@ header h1 {
 }
 
 a:any-link{
-    color:var(--secondary-color);
+    color:var(--secondary-color-variant);
     text-decoration: none;
     padding:10px 15px;
 }
@@ -94,8 +94,85 @@ aside h2{
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 10px;
 }
 
+.card {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.card-imagem {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+@media (max-width: 799px) {
+    #baleia.card {
+        background-image: url('cauda1.jpg');
+        background-size: cover;
+        background-position: center;
+        color: black;
+    }
+    
+    #baleia .card-imagem {
+        display: none;
+    }
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--primary-color-variant);
+    text-align: left;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 14px;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer label {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+footer input, footer textarea {
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+footer button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color-variant);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+footer button:hover {
+    background-color: var(--secondary-color-variant);
+}
 
 
 
